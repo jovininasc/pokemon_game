@@ -1,0 +1,115 @@
+html,
+body {
+    width: 100%;
+    height: 100%;
+    background-image: url('fundo.jpeg');
+    background-size: cover;
+    padding: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    object-fit: cover;
+}
+
+
+.pokebola {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 999;
+    pointer-events: none;
+    margin-top: 200px;
+    width: 35%;
+    height: 70%;
+}
+
+.homepage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin-top: 100px;
+
+}
+
+
+
+.card-pokemon {
+    margin-bottom: 100px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    justify-content: center;
+
+    text-align: center;
+    margin: 20px auto;
+
+    padding: 15px;
+
+}
+
+.card-pokemon img {
+    width: 100px;
+    height: auto;
+}
+
+.capture-button {
+    margin-top: 30px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    background-color: #ffcb05;
+    color: #2a75bb;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.capture-message.success {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.capture-message.failure {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+.nameP {
+    background-color: #ffffff;
+    color: #000000;
+    border-radius: 10px;
+}
+
+.capture-message {
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin-top: 10px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    max-width: 300px;
+}
+
+
+.btn-voltar {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background-color: #e53935;
+
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 10px 16px;
+    border-radius: 8px;
+    font-size: 1rem;
+    border: none;
+    margin: 20px auto;
+}

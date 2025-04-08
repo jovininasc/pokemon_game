@@ -1,0 +1,15 @@
+.btn-voltar {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background-color: #e53935;
+
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 10px 16px;
+    border-radius: 8px;
+    font-size: 1rem;
+    border: none;
+    margin: 20px auto;
+}

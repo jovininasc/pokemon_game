@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body class="bg-light">
+    <button [routerLink]="['/home']" class="btn-voltar"> &lt; Voltar para Home </button>
+    <div class="container mt-5">
+        <div class="card shadow-lg p-4">
+            <h2 class="text-center mb-4">Register Pokémon</h2>
+            <form (ngSubmit)="registrarPokemon()">
+                <div class="mb-3">
+                    <label class="form-label">Nome do Pokémon</label>
+                    <input [(ngModel)]="pokemon.name" name="name" class="form-control" placeholder="Digite o nome">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Tipo do Pokémon</label>
+                    <input [(ngModel)]="pokemon.tipo" name="tipo" type="text" class="form-control"
+                        placeholder="Digite o tipo">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Link da Imagem</label>
+                    <input [(ngModel)]="pokemon.link" name="link" type="text" class="form-control"
+                        placeholder="Cole o link da imagem">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Chance de Captura</label>
+                    <input [(ngModel)]="pokemon.porcentagem" name="porcentagem" type="number" class="form-control"
+                        placeholder="Digite a chance em %">
+                </div>
+                <button type="submit" class="btn btn-primary w-100">Cadastrar</button>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

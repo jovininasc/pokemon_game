@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="login.component.css">
+</head>
+
+<body>
+
+    <div class="login-wrapper">
+        <form *ngIf="noAccount()" (ngSubmit)="fazerRegistro()">
+            <h2>register</h2>
+            <div class="input-fiend">
+                <input type="name" name="name" [(ngModel)]="usuario.name" required>
+                <label> Name</label>
+
+            </div>
+            <div class="input-fiend">
+                <input type="text" name="email" [(ngModel)]="usuario.email" required>
+                <label> Email</label>
+            </div>
+            <div class="input-fiend">
+                <input type="password" name="password" [(ngModel)]="usuario.password" required>
+                <label> Password</label>
+
+            </div>
+            <div class="input-fiend">
+                <input type="password" name="password" [(ngModel)]="usuario.password2" required>
+                <label> Confirm Password</label>
+
+            </div>
+            <button type="submit">Register</button>
+
+            <button type="button" (click)="islogin()">already have an account? log in</button>
+
+        </form>
+
+        <!--tela de login-->
+
+        <form *ngIf="enterLogin()" (ngSubmit)="fazerLogin()">
+            <h2>Login</h2>
+            <div class="input-fiend">
+                <input type="text" name="email" [(ngModel)]="usuario.email" required>
+                <label> Email</label>
+            </div>
+            <div class="input-fiend">
+                <input type="password" name="password" [(ngModel)]="usuario.password" required>
+                <label> Password</label>
+
+            </div>
+            <button type="submit">login</button>
+
+            <button type="button" (click)="isRegister()">Don't have an account? log in</button>
+        </form>
+
+
+    </div>
+</body>
+
+</html>

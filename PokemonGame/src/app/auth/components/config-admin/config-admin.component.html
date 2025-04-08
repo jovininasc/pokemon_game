@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <button [routerLink]="['/home']" class="btn-voltar"> &lt; Voltar para Home </button>
+        <h1 class="header">Lista de Usuários</h1>
+        <div class="user-list">
+            <div class="user-card" *ngFor="let user of users">
+                <div class="user-name">{{ user.name }}</div>
+                <div class="user-role">{{ user.role }}</div>
+
+                <button mat-button [matMenuTriggerFor]="menu">Alterar Tipo</button>
+                <mat-menu #menu>
+                    <button mat-menu-item (click)="changeUserRole(user.id, 'admin')">Admin</button>
+                    <button mat-menu-item (click)="changeUserRole(user.id, 'hunter')">Hunter</button>
+
+                </mat-menu>
+                <button mat-button [matMenuTriggerFor]="pokeList" (click)="userPokemons(user.id)">Pokemons</button>
+                <mat-menu #pokeList>
+                    <div *ngFor="let eachPoke of pokemon">
+                        <div>Name: {{eachPoke.name}} Elemento: {{eachPoke.tipo}} Level: {{eachPoke.level}}</div>
+                    </div>
+                </mat-menu>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

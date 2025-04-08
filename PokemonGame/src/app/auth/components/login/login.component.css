@@ -1,0 +1,110 @@
+* {
+    font-family: sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    background: url(wallpaperlogin.jpg) no-repeat center center fixed;
+    background-size: cover;
+    padding: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    object-fit: cover;
+    outline: auto;
+}
+
+
+
+.login-wrapper {
+    width: 400px;
+    padding: 30px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 8px;
+    backdrop-filter: blur(8px);
+    text-align: center;
+    -webkit-backdrop-filter: blur(8px)
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form h2 {
+    font-size: 2rem;
+    color: #fff;
+    margin-bottom: 20px;
+
+}
+
+.input-fiend {
+    position: relative;
+    margin: 20px 0;
+    border-bottom: 2px solid #ccc;
+
+}
+
+.input-fiend input {
+    width: 100%;
+    height: 40%;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #ffffff;
+}
+
+.input-fiend label {
+    position: absolute;
+
+    left: 0;
+
+    color: #fff;
+
+    pointer-events: none;
+    transition: 0.3s ease;
+    transform: translateY(-120%);
+    font-size: 0.8rem;
+    top: 10%;
+
+}
+
+
+
+.account {
+    text-decoration: none;
+    color: #ccc;
+    margin-top: 20px;
+}
+
+.account:hover {
+    text-decoration: underline;
+}
+
+button {
+    background-color: #fff;
+    color: black;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 12px 20px;
+    border-radius: 3px;
+    border: 2px solid transparent;
+    cursor: pointer;
+    transition: 0.3s ease;
+    margin-top: 20px;
+
+}
+
+button:hover {
+    background: rgba(47, 19, 204, 0.15);
+    color: #fff;
+    border-color: #fff;
+
+}
