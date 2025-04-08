@@ -1,0 +1,46 @@
+# See https://docs.github.com/get-started/getting-started-with-git/ignoring-files for more about ignoring files.
+
+# Compiled output
+PokemonGame/dist
+PokemonGame/tmp
+PokemonGame/out-tsc
+PokemonGame/bazel-out
+
+# Node
+PokemonGame/node_modules
+server/node_modules
+PokemonGame/dist
+
+server/.env
+npm-debug.log
+yarn-error.log
+
+# IDEs and editors
+.idea/
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+
+# Visual Studio Code
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.history/*
+
+# Miscellaneous
+PokemonGame/.angular/cache
+PokemonGame/.sass-cache/
+PokemonGame/connect.lock
+PokemonGame/coverage
+PokemonGame/libpeerconnection.log
+PokemonGame/testem.log
+PokemonGame/typings
+
+# System files
+.DS_Store
+Thumbs.db
